@@ -1,0 +1,18 @@
+datasource db {
+    provider = "mongodb"
+    url      = "mongodb+srv://prisma_test:prisma_test@cluster0.uycy3.mongodb.net/prisma_test?retryWrites=true&w=majority"
+  }
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  name   String
+  email    String @unique
+  password String
+  role  String
+  status  String
+  varificationCode  String @unique
+}

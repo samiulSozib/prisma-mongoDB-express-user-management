@@ -1,0 +1,51 @@
+After installing npm package with 'npm install' commend, give all the environment varibale
+JET_SECRET=
+EMAIL=
+PASSWORD=
+VERIFICATION_CODE_SECRET=
+MONGO_URL=
+SESSION_SECRET=
+
+and finally run with 'npm start' command
+
+
+All APIs
+
+Register
+Post: http://localhost:1000/api/auth/register
+
+Login
+Post: http://localhost:1000/api/auth/login
+
+Logout
+Get: http://localhost:1000/api/auth/logout
+
+Verify email
+Get: http://localhost:1000/api/auth/verify/:verificationCode
+
+Forget password email 
+Get: http://localhost:1000/api/auth/forget-password
+
+Reset Password
+Post: http://localhost:1000/api/auth//reset-password/:userId
+
+Create User
+Post: http://localhost:1000/api/user/create
+
+Get all user
+Get: http://localhost:1000/api/user/get-all
+
+Get single user
+Get : http://localhost:1000/api/user/get-user/647e0248929bbc364aea68d7
+
+Edit user
+Post: http://localhost:1000/api/user/edit/647e0248929bbc364aea68d7
+
+Delete user 
+Delete: http://localhost:1000/api/user/delete/647e0248929bbc364aea68d7
+
+Get profile:
+Get: http://localhost:1000/api/user
+
+
+
